@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  
+
+<ion-content class="ion-padding ion-margin-top" color="grey">
+  <ion-card color="white">
+  <div class="ion-padding">
+  <ion-img src="{{details.img}}"></ion-img>
+  </div>
+  <div class="ion-padding" color="white">
+    <ion-label>
+      <h1>{{details.name}}</h1>
+  <ion-label class="ion-padding">
+   <p> {{details.detail}}</p>
+  </ion-label>
+
+  <br>
+  <br>
+  <p>
+      {{details.date}}
+  </p>
+  </ion-label></div>
+</ion-card>
+  
+</ion-content>

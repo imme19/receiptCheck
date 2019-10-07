@@ -1,0 +1,48 @@
+<ion-tabs color="primary"></ion-tabs>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="grey">
+    <ion-card color="primary" class="ion-margin-top">
+      <ion-card class="no-padding selector noshadow" color="white">
+            
+  <form novalidate #note="ngForm" color="white">
+
+    <ion-list color="white">
+         <ion-img src="{{img}}" class="ion-padding ion-margin"></ion-img>
+
+      <ion-card class="selector noshadow">
+      <ion-item color="white">
+          <ion-label position="floating"> Username </ion-label>
+          <ion-input [(ngModel)]="user" type="email" name="user" required></ion-input>
+        </ion-item>
+        
+        
+        <ion-item color="white">
+          <ion-label position="floating"> Password </ion-label>
+          <ion-input [(ngModel)]="pass" type="password" name="pass" required></ion-input>
+        </ion-item>
+  
+        <div class="ion-padding" color="white">
+          <ion-button color="favorite" (click)="onLogin(user,pass)" class="ion-margin-top" expand="block" >
+            Login
+          </ion-button>
+        </div>  
+
+      </ion-card>
+    </ion-list>
+  </form>
+</ion-card>
+</ion-card>
+
+
+</ion-content>
+

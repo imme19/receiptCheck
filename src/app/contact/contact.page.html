@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Contact
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-card class="ion-padding selector noshadow">
+    <ion-label>
+      <h1>ติดต่อสำนักงาน</h1>
+    </ion-label>
+    <ion-card color="primary" class="ion-margin-top">
+      <ion-card class="ion-padding" color="white">
+          <ion-label position="floating"> หัวข้อ </ion-label>
+          <ion-card expand="full" >
+          <ion-input ngModel type="text" name="topic" #topic="ngModel" required></ion-input></ion-card>
+          <ion-label position="floating">
+            รายละเอียด
+          </ion-label>
+          <ion-card>
+            <ion-textarea ngModel type="Address" name="detail" #detail="ngModel" required></ion-textarea>
+          </ion-card>
+          
+      </ion-card>
+
+      
+
+    </ion-card>
+    <ion-button expand="block" color="favorite" (click)="sendto()">
+            send
+          </ion-button>
+  </ion-card>
+</ion-content>

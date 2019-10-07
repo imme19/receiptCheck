@@ -1,0 +1,39 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+@font-face{
+  font-family: Mitr;
+  src: url('../assets/font/Mitr-Medium.ttf') format('ttf');
+}
+
+*{
+  font-family: Mitr;
+}
+
+img{
+  height: 70vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.selector {
+	-webkit-box-shadow: 0 3px 5px #333;
+	-moz-box-shadow: 0 3px 5px #333;
+	box-shadow: 0 3px 5px #333;
+  }
+  
+  .selector.noshadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    }
+
+ion-tabs{
+ --ion-tabbar-background-color:blue;
+ --ion-tabs-background-color:var(--ion-tabbar-background-color, #ffffff);
+}
+
