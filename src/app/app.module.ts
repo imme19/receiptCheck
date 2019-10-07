@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { IonicStorageModule, Storage } from '@ionic/storage';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 const firebaseConfig = {
@@ -31,6 +33,8 @@ const firebaseConfig = {
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    HttpClientModule,
+    IonicStorageModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [

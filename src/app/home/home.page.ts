@@ -48,6 +48,7 @@ export class HomePage implements OnInit {
     }
   }*/
 
+
   onLogin(user, pass) {
      firebase.auth().signInWithEmailAndPassword(user, pass).then( db => {
         if (db.user === user) {
